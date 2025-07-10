@@ -1,5 +1,7 @@
 # Matrix Rain Screensaver
 
+![Matrix Rain Preview](preview.gif)
+
 A Matrix-style falling characters screensaver written in C# using .NET 9+ and WinForms.
 
 ## Features
@@ -36,6 +38,15 @@ dotnet publish -c Release -r win-x64 --self-contained
 3. Rename the executable from `MatrixRainSaver.exe` to `MatrixRainSaver.scr`
 4. Right-click on the `.scr` file and select "Install" to install as a screensaver
 5. Configure through Windows Settings > Personalization > Lock screen > Screen saver settings
+
+### Quick Installation Commands
+
+```bash
+# Build and prepare screensaver
+dotnet publish -c Release -r win-x64 --self-contained
+cd bin\Release\net9.0-windows\win-x64\publish\
+ren MatrixRainSaver.exe MatrixRainSaver.scr
+```
 
 ## Usage
 
